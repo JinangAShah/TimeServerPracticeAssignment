@@ -72,10 +72,11 @@ def time_until_meal(meal):
     print('time elapsed is {}'.format(time_elapsed))
 
     if time_elapsed.total_seconds() >= 0:
-        meal_time_in = (time_elapsed + timedelta(hours=0, minutes=0, seconds=0))
+        meal_time_in = (time_elapsed +
+                        timedelta(hours=0, minutes=0, seconds=0))
     elif time_elapsed.total_seconds() < 0:
-        meal_time_in = (time_elapsed + timedelta(hours=24, minutes=0, seconds=0))
-
+        meal_time_in = (time_elapsed +
+                        timedelta(hours=24, minutes=0, seconds=0))
 
     print('time in seconds is {}'.format(meal_time_in.total_seconds()))
     hours = meal_time_in.total_seconds() // 3600
