@@ -65,6 +65,7 @@ def time_until_meal(meal):
     elif meal == 'dinner':
         meal_time = time(18, 30, 0)
         print(meal_time)
+
     temp_time = datetime.date(datetime(year=c.year, month=c.month, day=c.day))
     datetime1 = (datetime.combine(temp_time, present_time))
     datetime2 = (datetime.combine(temp_time, meal_time))
